@@ -1,0 +1,24 @@
+# Core requirements for the Danbooru tagger
+# Install with: pip install -r requirements.txt
+
+# ONNX Runtime — CPU version (works on any machine)
+onnxruntime>=1.16.0
+
+# If you have an NVIDIA CUDA GPU, also install the GPU version:
+# pip install onnxruntime-gpu
+# (Keep onnxruntime installed too — it's used as the fallback)
+
+# HuggingFace Hub — downloads the tagger model automatically
+huggingface_hub>=0.20.0
+
+# Image processing
+Pillow>=9.0.0
+
+# Array math
+numpy>=1.24.0
+
+# For reading the tag CSV
+pandas>=1.5.0
+
+# Progress bar
+tqdm>=4.64.0
